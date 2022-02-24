@@ -14,12 +14,50 @@
     font-display: swap;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     color: #000000;
     background-color: #FFFFFF;
+}
+
+.main-container {
+    flex-grow: 1;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 450px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 350px;
+    margin-left: auto;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .page-header {
@@ -61,6 +99,36 @@ body {
     height: 485px;
 }
 
+.advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    flex-direction: row;
+    Width: 1200px;
+}
+
+.container-photo {
+    background-image: url("../images/background/photo1.jpg");
+    background-repeat: no-repeat;
+    Width: 800px;
+    height: 384px;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.container-photo2 {
+    background-image: url("../images/background/photo2.jpg");
+    background-repeat: no-repeat;
+    Width: 800px;
+    height: 384px;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
 .advantages-tittle {
     font-family: "PT Sans", sans-serif;
     font-size: 30px;
@@ -81,6 +149,8 @@ body {
 .advantages-item {
     font-weight: 400;
     text-align: center;
+    width: 400px;
+    height: 384px;
 }
 
 .advantages-item-tittle {
@@ -150,6 +220,22 @@ body {
     background-color: #83B3D3;
 }
 
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    margin-right: auto;
+    width: 130px;
+}
+
+.footer-htmlacademy {
+    width: 114.9px;
+    margin-left: auto;
+}
+
 .footer-phone {
     font-size: 40px;
     line-height: 40px;
@@ -158,6 +244,7 @@ body {
     color: #000000;
     background-color: #ffffff;
     text-decoration: none;
+    width: 740px;
 }
 
 .catalog-products {
@@ -180,6 +267,30 @@ body {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+}
+
+.catalog-filter {
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    align-items: center;
+}
+
+.searchresults-conteiner {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.product-card {
+    width: 340px;
+}
+
+.searchresults {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .control-input {
@@ -335,19 +446,20 @@ body {
     text-transform: uppercase;
 }
 
-.advantages-item-2,
-.conteiner-advantages-item-1 {
+.blue {
     background-color: #83B3D3;
     color: #ffffff;
 }
 
-.advantages-item-1-1,
-.advantages-item-1-3,
-.advantages-item-3,
-.advantages-item-5 {
+.blue-transparent {
     background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-4 {
+.blue-transparent20 {
     background-color: rgba(131, 179, 211, 0.20);
+}
+
+.white {
+    background-color: #ffffff;
+    color: #000000;
 }
